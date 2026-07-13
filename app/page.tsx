@@ -17,12 +17,12 @@ const destaques = [
   },
   {
     nome: "Frango Crocante",
-    imagem: "/Images/Frango-crocante-novo.PNG",
+    imagem: "/Images/Frango-crocante-novo.png",
   },
 ];
 
 const galeria = [
-  "/Images/ambiente-interno.jpg",
+  "/Images/Ambiente-interno.jpg",
   "/Images/ambiente-externo.jpg",
   "/Images/equipe.jpg",
 ];
