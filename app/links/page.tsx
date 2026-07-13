@@ -49,7 +49,7 @@ export default function LinksPage() {
           }}
         >
           <Image
-            src="/Images/logo.PNG"
+            src="/Images/logo.png"
             alt="Espetto e Brasa"
             width={180}
             height={180}
