@@ -22,7 +22,7 @@ export default function LinksPage() {
         }}
       >
         <img
-          src="/images/logo.PNG"
+          src="/Images/Logo.PNG"
           alt="Espetto e Brasa"
           style={{
             width: "150px",
