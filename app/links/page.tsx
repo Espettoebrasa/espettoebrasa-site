@@ -1,41 +1,73 @@
-import Link from "next/link";
+"use client";
+
+import Image from "next/image";
 
 export default function LinksPage() {
+  const buttonStyle = {
+    width: "100%",
+    padding: "20px",
+    borderRadius: "16px",
+    backgroundColor: "#ffe600",
+    color: "#333333",
+    textDecoration: "none",
+    fontSize: "20px",
+    fontWeight: "600",
+    textAlign: "center" as const,
+    display: "block",
+    boxSizing: "border-box" as const,
+  };
+
   return (
     <main
       style={{
         minHeight: "100vh",
-        background: "#111111",
+        backgroundColor: "#111111",
         color: "#ffffff",
         display: "flex",
-        alignItems: "center",
         justifyContent: "center",
-        padding: "24px",
+        alignItems: "center",
+        padding: "30px 20px",
+        boxSizing: "border-box",
         fontFamily: "Arial, sans-serif",
       }}
     >
       <div
         style={{
           width: "100%",
-          maxWidth: "420px",
+          maxWidth: "600px",
           textAlign: "center",
         }}
       >
-        <img
-          src="/Images/Logo.PNG"
-          alt="Espetto e Brasa"
+        {/* LOGO */}
+        <div
           style={{
-            width: "150px",
-            maxWidth: "60%",
-            display: "block",
-            margin: "0 auto 20px auto",
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginBottom: "20px",
           }}
-        />
+        >
+          <Image
+            src="/Images/logo.PNG"
+            alt="Espetto e Brasa"
+            width={180}
+            height={180}
+            priority
+            style={{
+              width: "180px",
+              height: "auto",
+              display: "block",
+              objectFit: "contain",
+            }}
+          />
+        </div>
 
+        {/* TÍTULO */}
         <h1
           style={{
             fontSize: "28px",
-            marginBottom: "8px",
+            margin: "0 0 8px 0",
           }}
         >
           Espetto e Brasa
@@ -43,73 +75,54 @@ export default function LinksPage() {
 
         <p
           style={{
-            color: "#cccccc",
-            marginBottom: "32px",
+            fontSize: "18px",
+            margin: "0 0 32px 0",
+            color: "#dddddd",
           }}
         >
           Escolha uma opção
         </p>
 
+        {/* BOTÕES */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: "16px",
+            gap: "14px",
+            width: "100%",
           }}
         >
-          <Link
+          <a
             href="/"
-            style={{
-              background: "#ffd700",
-              color: "#111111",
-              padding: "18px",
-              borderRadius: "12px",
-              textDecoration: "none",
-              fontWeight: "bold",
-              fontSize: "18px",
-            }}
+            style={buttonStyle}
           >
             🌐 Acessar o Site
-          </Link>
+          </a>
 
-          <Link
+          <a
             href="/#cardapio"
-            style={{
-              background: "#ffd700",
-              color: "#111111",
-              padding: "18px",
-              borderRadius: "12px",
-              textDecoration: "none",
-              fontWeight: "bold",
-              fontSize: "18px",
-            }}
+            style={buttonStyle}
           >
             📖 Ver o Cardápio
-          </Link>
+          </a>
 
           <a
             href="https://www.instagram.com/espettoebrasaa/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{
-              background: "#ffd700",
-              color: "#111111",
-              padding: "18px",
-              borderRadius: "12px",
-              textDecoration: "none",
-              fontWeight: "bold",
-              fontSize: "18px",
-            }}
+            style={buttonStyle}
           >
             📸 Instagram
           </a>
         </div>
 
+        {/* ENDEREÇO */}
         <p
           style={{
             marginTop: "32px",
             color: "#888888",
             fontSize: "14px",
+            lineHeight: "1.5",
           }}
         >
           Rua Pero de Góis, 118
