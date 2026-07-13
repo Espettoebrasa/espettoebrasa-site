@@ -60,7 +60,7 @@ return (
           {/* LOGO */}
           <a href="#inicio" aria-label="Ir para o início">
             <Image
-              src="/Images/logo.PNG"
+              src="/Images/logo.png"
               alt="Logo Espetto e Brasa"
               width={80}
               height={80}
@@ -197,7 +197,7 @@ return (
         <div className="relative z-10 text-center px-6 max-w-4xl">
 
           <Image
-            src="/Images/logo.PNG"
+            src="/Images/logo.png"
             alt="Logo"
             width={220}
             height={220}
@@ -795,7 +795,7 @@ className="py-24">
       <footer className="bg-black py-10 text-center text-gray-400">
 
         <Image
-          src="/Images/logo.PNG"
+          src="/Images/logo.png"
           alt="Logo"
           width={120}
           height={120}
