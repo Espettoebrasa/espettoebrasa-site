@@ -535,17 +535,22 @@ return (
             </h3>
 
             <div className="space-y-3 text-lg">
-              {[
-                ["Batata Frita", "R$ 32,00"],
-                ["Batata à Moda da Casa", "R$ 40,00"],
-                ["Torresmo de Barriga", "R$ 40,00"],
-                ["Pastel (6 un.)", "R$ 33,00"],
-                ["Feijão Amigo", "R$ 22,00"],
-                ["Salpicão", "R$ 20,00"],
-                ["Arroz", "R$ 15,00"],
-                ["Tropeiro", "R$ 20,00"],
-                ["Bolinho de Bacalhau (10 un.)", "R$ 49,90"],
-              ].map(([nome, preco]) => (
+            {[
+  ["Batata Frita", "R$ 32,00"],
+  ["Batata à Moda da Casa", "R$ 40,00"],
+  ["Torresmo de Barriga", "R$ 40,00"],
+  ["Pastel (6 un.)", "R$ 33,00"],
+  ["Feijão Amigo", "R$ 22,00"],
+  ["Salpicão", "R$ 20,00"],
+  ["Arroz", "R$ 15,00"],
+  ["Tropeiro", "R$ 20,00"],
+  ["Bolinho de Bacalhau (10 un.)", "R$ 49,90"],
+  ["Parmegiana de Mignon", "R$ 29,90"],
+  ["Parmegiana de Frango", "R$ 24,90"],
+  ["Frango Crocante", "R$ 35,00"],
+  ["Picanha 400g", "R$ 95,00"],
+  ["Carne Seca Cremosa", "R$ 69,90"],
+].map(([nome, preco]) => (
                 <div
                   key={nome}
                   className="flex justify-between gap-4 border-b border-gray-700 pb-2"
@@ -588,21 +593,51 @@ return (
             </p>
 
             <div className="space-y-3 text-lg">
-              {[
-                ["Picanha na Chapa", "R$ 149,90"],
-                ["Carne Seca Cremosa", "R$ 119,90"],
-                ["Parmegiana de Filé Mignon", "R$ 89,90"],
-                ["Parmegiana de Frango", "R$ 82,90"],
-                ["Frango Crocante", "R$ 82,90"],
-              ].map(([nome, preco]) => (
-                <div
-                  key={nome}
-                  className="flex justify-between gap-4 border-b border-gray-700 pb-2"
-                >
-                  <span>{nome}</span>
-                  <span className="whitespace-nowrap">{preco}</span>
-                </div>
-              ))}
+             {[
+  {
+    nome: "Picanha na Chapa",
+    descricao: "Arroz • Batata Frita • Vinagrete • Farofa",
+    preco: "R$ 149,90",
+  },
+  {
+    nome: "Carne Seca Cremosa",
+    descricao: "Arroz • Batata Frita",
+    preco: "R$ 119,90",
+  },
+  {
+    nome: "Parmegiana de Filé Mignon",
+    descricao: "Arroz • Batata Frita",
+    preco: "R$ 89,90",
+  },
+  {
+    nome: "Parmegiana de Frango",
+    descricao: "Arroz • Batata Frita",
+    preco: "R$ 82,90",
+  },
+  {
+    nome: "Frango Crocante",
+    descricao: "Arroz • Salpicão • Molho Gorgonzola",
+    preco: "R$ 82,90",
+  },
+].map(({ nome, descricao, preco }) => (
+  <div
+    key={nome}
+    className="border-b border-gray-700 py-4"
+  >
+    <div className="flex justify-between items-start gap-4">
+      <div className="flex-1">
+        <p className="font-semibold text-white">{nome}</p>
+        <p className="text-sm text-gray-400 mt-1">
+          {descricao}
+        </p>
+      </div>
+
+      <span className="whitespace-nowrap font-bold text-white">
+        {preco}
+      </span>
+    </div>
+  </div>
+))}
             </div>
           </div>
 
@@ -825,5 +860,5 @@ className="py-24">
   <span>Entre em Contato</span>
 </a>
       </main>
-  );
-}
+  );git add <div className=""></div>git commit -m "atualizar cardapio com novas porcoes e acompanhamentos"
+  git PushManager
